@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio web informativo para el desarrollo web</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sitio informativo: Desarrollo Web</h1>
+  <nav>
+    <ul>
+      <li><a href="#introduccion">Introducción</a></li>
+      <li><a href="#html">HTML</a></li>
+      <li><a href="#css">CSS</a></li>
+      <li><a href="#javascript">JavaScript</a></li>
+
+      <li><a href="framework.html">CSS Frameworks</a></li>
+      <li><a href="Git.html">Git</a></li>
+      <li><a href="frameworks-js.html">JS Frameworks</a></li>
+      <li><a href="backend.html">Back-end</a></li>
+
+      <li><a href="#herramientas">Herramientas</a></li>
+      <li><a href="#recursos">Recursos</a></li>
+      <li><a href="#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="introduccion" class="seccion">
+    <h2>Introducción</h2>
+    <p>
+      Este sitio explica los conceptos básicos del desarrollo web:
+      <strong>HTML</strong> para la estructura,
+      <strong>CSS</strong> para el estilo, y
+      <strong>JavaScript</strong> para la interacción.
+    </p>
+
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Objetivo</h3>
+        <p>Ser una guía clara para quienes inician en desarrollo web.</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Estructura</h3>
+        <p>Secciones limpias y navegación sencilla.</p>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Diseño</h3>
+        <p>Construido con HTML5 y CSS puro.</p>
+      </div>
+    </div>
+  </section>
+
+  <section id="html" class="seccion">
+    <h2>HTML</h2>
+    <p>
+      HTML es el lenguaje que estructura una página web. Sus etiquetas permiten organizar títulos,
+      párrafos y secciones.
+    </p>
+
+    <pre><code>
+<section>
+  <h2>Ejemplo de sección</h2>
+  <p>Contenido dentro de la sección.</p>
+</section>
+    </code></pre>
+  </section>
+
+  <section id="css" class="seccion">
+    <h2>CSS</h2>
+    <p>
+      CSS controla la apariencia de la página: colores, tamaños, bordes y diseño general.
+    </p>
+
+    <pre><code>
+button {
+  background-color: #4f46e5;
+  color: white;
+  padding: 10px 20px;
+  border-radius: 6px;
+}
+    </code></pre>
+  </section>
+
+  <section id="javascript" class="seccion">
+    <h2>JavaScript</h2>
+    <p>
+      JavaScript agrega interactividad a una página, permitiendo botones, efectos y validaciones.
+    </p>
+
+    <button id="demoBtn" class="btn">Probar JavaScript</button>
+  </section>
+
+  <section id="herramientas" class="seccion">
+    <h2>Herramientas recomendadas</h2>
+    <ul class="lista">
+      <li><strong>Editor:</strong> Visual Studio Code</li>
+      <li><strong>Navegador:</strong> Chrome o Firefox</li>
+      <li><strong>Control de versiones:</strong> Git/GitHub</li>
+      <li><strong>Framework opcional:</strong> Tailwind o Bootstrap</li>
+    </ul>
+  </section>
+
+  <section id="recursos" class="seccion">
+    <h2>Recursos útiles</h2>
+
+    <div class="tarjetas">
+
+      <div class="tarjeta">
+        <h3>HTML</h3>
+        <p>Conceptos basicos y etiquetas.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/HTML" target="_blank">MDN: HTML</a>
+      </div>
+
+      <div class="tarjeta">
+        <h3>CSS</h3>
+        <p>Propiedades y diseño.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/CSS" target="_blank">MDN: CSS</a>
+      </div>
+
+      <div class="tarjeta">
+        <h3>JavaScript</h3>
+        <p>Fundamentos y DOM.</p>
+        <a href="https://developer.mozilla.org/es/docs/Web/JavaScript" target="_blank">MDN: JS</a>
+      </div>
+
+    </div>
+  </section>
+
+  <section id="contacto" class="seccion">
+    <h2>Contacto</h2>
+
+    <form id="formContacto" class="formulario">
+      <label>Nombre:
+        <input type="text" id="nombre" required>
+      </label>
+
+      <label>Correo:
+        <input type="email" id="correo" required>
+      </label>
+
+      <label>Mensaje:
+        <textarea id="mensaje" rows="4" required></textarea>
+      </label>
+
+      <button type="submit" class="btn">Enviar</button>
+    </form>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 – Sitio informativo sobre desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
