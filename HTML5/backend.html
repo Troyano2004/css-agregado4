@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio informativo: Introducción al Back-end</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sitio informativo: Desarrollo Web</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio (Fundamentos)</a></li>
+      <li><a href="framework.html">CSS Frameworks</a></li>
+      <li><a href="Git.html">Git</a></li>
+      <li><a href="frameworks-js.html">JS Frameworks</a></li>
+      <li aria-current="page"><a href="backend.html">Back-end</a></li>
+      <li><a href="index.html#herramientas">Herramientas</a></li>
+      <li><a href="index.html#recursos">Recursos</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="backend" class="seccion">
+    <h2>⚙️ Introducción al Back-end</h2>
+    <p>
+      El **Back-end** (o la parte del servidor) es la lógica detrás de escena que el usuario no ve.
+      Se encarga de procesar las peticiones del usuario, gestionar la seguridad, realizar cálculos
+      complejos y manipular los datos almacenados en una base de datos.
+    </p>
+
+    ---
+
+    <h3>APIs (Application Programming Interfaces)</h3>
+    <p>
+      La comunicación entre el **Front-end** (tu navegador) y el **Back-end** (el servidor) se realiza a través
+      de una **API**. La API define cómo se deben solicitar e intercambiar los datos. La arquitectura más común
+      para esto es **REST** (Representational State Transfer).
+    </p>
+
+    > **Ejemplo:** Cuando inicias sesión, el Front-end envía tu usuario y contraseña a un *endpoint* de la API
+    > en el Back-end para ser verificado contra la base de datos.
+
+    ---
+
+    <h3>Lenguajes y Tecnologías Comunes</h3>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Lógica del Servidor</h3>
+        <ul class="lista">
+          <li>**Node.js/Express:** Permite usar JavaScript en el servidor. Muy popular.</li>
+          <li>**Python (Django/Flask):** Elegido por su legibilidad y rápido desarrollo.</li>
+          <li>**PHP (Laravel/Symfony):** Uno de los lenguajes más antiguos y más usados en la web.</li>
+        </ul>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Bases de Datos</h3>
+        <ul class="lista">
+          <li>**SQL (Relacionales):** MySQL, PostgreSQL, SQL Server. Ideales para datos estructurados con relaciones claras.</li>
+          <li>**NoSQL (No Relacionales):** MongoDB, Cassandra. Ideales para datos flexibles o grandes volúmenes de información.</li>
+        </ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 – Sitio informativo sobre desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

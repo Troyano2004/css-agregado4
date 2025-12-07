@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio informativo: Frameworks de CSS</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sitio informativo: Desarrollo Web</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio (Fundamentos)</a></li>
+      <li aria-current="page"><a href="framework.html">CSS Frameworks</a></li>
+      <li><a href="Git.html">Git</a></li>
+      <li><a href="frameworks-js.html">JS Frameworks</a></li>
+      <li><a href="backend.html">Back-end</a></li>
+      <li><a href="index.html#herramientas">Herramientas</a></li>
+      <li><a href="index.html#recursos">Recursos</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="frameworks-css" class="seccion">
+    <h2>🎨 Frameworks de CSS</h2>
+    <p>
+      Un **Framework de CSS** es una librería preescrita de estilos y clases que facilita la creación de diseños complejos y,
+      sobre todo, **responsivos**. Su principal objetivo es ahorrar tiempo al no tener que escribir CSS desde cero para elementos comunes
+      como botones, barras de navegación y sistemas de *grid*.
+    </p>
+
+    ---
+
+    <h3>Tipos de Frameworks</h3>
+    <div class="tarjetas">
+      <div class="tarjeta">
+        <h3>Bootstrap (Orientado a Componentes)</h3>
+        <p>
+          El framework más popular. Proporciona **componentes** listos para usar (tarjetas, modales, carruseles)
+          y utiliza un robusto sistema de **Grid de 12 columnas**. Ideal para prototipos rápidos con apariencia consistente.
+        </p>
+        <pre><code>&lt;button class="btn btn-primary"&gt;Botón&lt;/button&gt;</code></pre>
+      </div>
+
+      <div class="tarjeta">
+        <h3>Tailwind CSS (Orientado a Utilidades)</h3>
+        <p>
+          Se basa en **clases de utilidad** de bajo nivel. En lugar de clases como `btn-primary`, usas clases atómicas
+          como `bg-blue-500` y `p-4` para construir tus propios componentes directamente en el HTML. Ofrece gran **flexibilidad**.
+        </p>
+        <pre><code>&lt;button class="bg-indigo-600 text-white py-2 px-4 rounded"&gt;Botón&lt;/button&gt;</code></pre>
+      </div>
+    </div>
+
+    ---
+
+    <h3>Diseño Responsivo (Responsive Design)</h3>
+    <p>
+      Todos los frameworks modernos incluyen herramientas para asegurar que tu diseño se vea bien en cualquier dispositivo (móviles, tabletas o escritorios).
+      Esto se logra mediante la definición de **puntos de interrupción (*breakpoints*)** en el CSS.
+    </p>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 – Sitio informativo sobre desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

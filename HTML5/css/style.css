@@ -1,0 +1,228 @@
+
+body {
+  margin: 0;
+  /* Cambio de fuente a una más moderna y universal */
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: #f8f8fa; /* Fondo muy claro */
+  color: #2c3e50; /* Color de texto oscuro para alto contraste */
+  line-height: 1.6; /* Mejora la legibilidad del texto */
+}
+
+/* ----------------------------------- */
+/* 2. Encabezado y Navegación */
+/* ----------------------------------- */
+header {
+  background: #2c3e50; /* Color de fondo oscuro para contraste */
+  color: white;
+  padding: 25px 0; /* Más relleno vertical */
+  text-align: center;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+}
+
+h1 {
+  margin: 0;
+  font-size: 2em;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap; /* Permite que el menú se envuelva en pantallas pequeñas */
+  gap: 25px; /* Más espacio entre enlaces */
+  justify-content: center;
+  margin-top: 20px;
+}
+
+nav a {
+  color: white;
+  text-decoration: none;
+  font-weight: 600; /* Ligeramente más grueso */
+  padding: 5px 10px;
+  border-radius: 4px;
+  transition: background 0.3s ease; /* Transición suave al pasar el mouse */
+}
+
+nav a:hover,
+nav a[aria-current="page"] { /* Estilo para la página actual */
+  background: #4f46e5;
+  text-decoration: none;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
+}
+
+/* ----------------------------------- */
+/* 3. Contenido Principal y Secciones */
+/* ----------------------------------- */
+main {
+  /* Usar max-width para centrar y limitar el ancho en pantallas grandes */
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 20px 5%;
+}
+
+.seccion {
+  background: white;
+  padding: 30px;
+  border-radius: 12px;
+  margin-bottom: 40px;
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.05); /* Sombra elegante */
+}
+
+h2 {
+  color: #4f46e5; /* Color primario para los títulos de sección */
+  border-bottom: 3px solid #dcdcdc; /* Línea separadora sutil */
+  padding-bottom: 8px;
+  margin-bottom: 25px;
+  font-size: 1.8em;
+}
+
+/* ----------------------------------- */
+/* 4. Tarjetas y Grids */
+/* ----------------------------------- */
+.tarjetas {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr)); /* Hacemos las tarjetas un poco más grandes */
+  gap: 25px;
+}
+
+.tarjeta {
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  border: 1px solid #eee;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+  transition: transform 0.3s ease, box-shadow 0.3s ease; /* Animación al pasar el mouse */
+}
+
+.tarjeta:hover {
+  transform: translateY(-5px); /* Efecto de "levantamiento" */
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+}
+
+.tarjeta h3 {
+  color: #333;
+  border-bottom: 1px dashed #e0e0e0;
+  padding-bottom: 5px;
+}
+
+.tarjeta a {
+  color: #4f46e5;
+  font-weight: 600;
+  text-decoration: none;
+}
+
+.tarjeta a:hover {
+  text-decoration: underline;
+}
+
+/* ----------------------------------- */
+/* 5. Código y Botones (Interactividad) */
+/* ----------------------------------- */
+pre {
+  background: #2c3e50; /* Color oscuro similar al header para código */
+  color: #ecf0f1;
+  padding: 18px;
+  border-radius: 8px;
+  overflow-x: auto;
+  font-family: 'Consolas', 'Courier New', monospace; /* Fuente de código */
+  margin-top: 15px;
+}
+
+.btn {
+  background: #4f46e5;
+  color: white;
+  border: none;
+  padding: 12px 25px;
+  border-radius: 8px; /* Bordes más suaves */
+  cursor: pointer;
+  font-weight: bold;
+  font-size: 1em;
+  transition: background 0.3s ease, transform 0.1s ease;
+}
+
+.btn:hover {
+  background: #4338ca;
+  transform: translateY(-2px); /* Pequeño movimiento al interactuar */
+}
+
+/* ----------------------------------- */
+/* 6. Formulario */
+/* ----------------------------------- */
+.formulario {
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+  max-width: 500px; /* Limitar ancho del formulario */
+  margin: 0 auto;
+}
+
+.formulario label {
+  font-weight: 600;
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+
+input, textarea {
+  padding: 12px;
+  border-radius: 6px;
+  border: 1px solid #c9c9c9;
+  font-size: 1em;
+  width: 100%; /* Asegura que ocupen todo el ancho */
+  box-sizing: border-box; /* Incluye padding/border en el ancho total */
+  transition: border-color 0.3s ease;
+}
+
+input:focus, textarea:focus {
+  border-color: #4f46e5; /* Resaltar borde al enfocar */
+  outline: none;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2); /* Sombra de enfoque sutil */
+}
+
+/* ----------------------------------- */
+/* 7. Footer */
+/* ----------------------------------- */
+footer {
+  background: #2c3e50; /* Color oscuro consistente con el header */
+  color: #ecf0f1;
+  text-align: center;
+  padding: 20px;
+  font-size: 0.9em;
+  margin-top: 40px;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  background-color: #ffffff;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  overflow: hidden;
+}
+
+th, td {
+  padding: 15px;
+  text-align: left;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+th {
+  background-color: #f4f8fb;
+  color: #2c3e50;
+  font-weight: 700;
+  text-transform: uppercase;
+  font-size: 0.9em;
+}
+
+tr:hover {
+  background-color: #fafafa;
+}
+
+td code {
+  background-color: #e6e6fa;
+  color: #4f46e5;
+  padding: 3px 6px;
+  border-radius: 4px;
+  font-weight: 600;
+}

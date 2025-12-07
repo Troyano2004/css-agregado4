@@ -1,0 +1,129 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio informativo: Git y Control de Versiones</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sitio informativo: Desarrollo Web</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio (Fundamentos)</a></li>
+
+      <li><a href="framework.html">CSS Frameworks</a></li>
+
+      <li><a href="frameworks-js.html">JS Frameworks</a></li>
+      <li><a href="backend.html">Back-end</a></li>
+
+      <li><a href="index.html#herramientas">Herramientas</a></li>
+      <li><a href="index.html#recursos">Recursos</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+
+  <section id="git-github" class="seccion">
+    <h2>🐙 Git y Control de Versiones</h2>
+    <p>
+      El **Control de Versiones** es una práctica fundamental en el desarrollo de software.
+      **Git** es la herramienta líder que te permite rastrear cada modificación de tu código,
+      volviendo fácilmente a versiones anteriores y facilitando la colaboración en equipo.
+    </p>
+
+    ---
+
+    <h3>¿Qué es Git?</h3>
+    <p>
+      Git es un **Sistema de Control de Versiones Distribuido (DVCS)**. Esto significa que el historial
+      completo de un proyecto no se almacena en un servidor centralizado, sino que cada desarrollador
+      tiene una copia completa del repositorio en su máquina local.
+      Esto garantiza redundancia y permite trabajar sin conexión.
+    </p>
+
+    > **Conceptos Clave:**
+    > * **Repositorio (Repo):** La carpeta del proyecto con todo su historial de cambios.
+    > * **Commit:** Una "instantánea" del estado del proyecto en un momento dado.
+    > * **Branch (Rama):** Una línea de desarrollo independiente que permite experimentar con nuevas
+    >     funcionalidades sin afectar la versión estable del proyecto (`main` o `master`).
+
+    [Image of the Git branching model showing main, develop, and feature branches]
+
+
+    ---
+
+    <h3>Plataformas Remotas (GitHub, GitLab, Bitbucket)</h3>
+    <p>
+      Aunque Git es la herramienta local, estas plataformas son la capa web que aloja tu código de forma remota.
+      Son esenciales para la colaboración y el respaldo de tu trabajo:
+    </p>
+
+    <ul class="lista-plataformas">
+      <li>**GitHub:** La plataforma más grande y popular. Ideal para proyectos de código abierto.</li>
+      <li>**GitLab:** Ofrece una solución completa para el ciclo de vida de DevOps (desde el código hasta el despliegue).</li>
+      <li>**Bitbucket:** Popular en entornos corporativos, a menudo integrado con otras herramientas de Atlassian.</li>
+    </ul>
+
+    ---
+
+    <h3>Comandos Esenciales de Git</h3>
+    <p>
+      Para empezar a trabajar con Git, necesitas conocer el flujo básico: clonar, añadir, guardar y subir.
+    </p>
+    <table>
+      <thead>
+      <tr>
+        <th>Comando</th>
+        <th>Función</th>
+        <th>Descripción Detallada</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td><code>git clone [url]</code></td>
+        <td>Iniciar</td>
+        <td>Descarga un repositorio completo de una plataforma remota (ej. GitHub) a tu máquina local.</td>
+      </tr>
+      <tr>
+        <td><code>git status</code></td>
+        <td>Verificación</td>
+        <td>Muestra el estado actual del área de trabajo (qué archivos están modificados o listos para guardar).</td>
+      </tr>
+      <tr>
+        <td><code>git add [archivo]</code><br>o <code>git add .</code></td>
+        <td>Preparación</td>
+        <td>Mueve los cambios al **Staging Area** (área de preparación) antes de hacer un commit.</td>
+      </tr>
+      <tr>
+        <td><code>git commit -m "Mensaje"</code></td>
+        <td>Guardar</td>
+        <td>Registra los archivos preparados en el historial local con un mensaje descriptivo.</td>
+      </tr>
+      <tr>
+        <td><code>git push</code></td>
+        <td>Subir</td>
+        <td>Envía los commits guardados localmente al repositorio remoto (GitHub).</td>
+      </tr>
+      <tr>
+        <td><code>git pull</code></td>
+        <td>Actualizar</td>
+        <td>Descarga e integra los cambios más recientes que otros hicieron en el repositorio remoto.</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+
+</main>
+
+<footer>
+  <p>© 2025 – Sitio informativo sobre desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>

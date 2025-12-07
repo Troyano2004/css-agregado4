@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Sitio informativo: Frameworks de JavaScript</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<header>
+  <h1>Sitio informativo: Desarrollo Web</h1>
+  <nav>
+    <ul>
+      <li><a href="index.html">Inicio (Fundamentos)</a></li>
+      <li><a href="framework.html">CSS Frameworks</a></li>
+      <li><a href="Git.html">Git</a></li>
+      <li aria-current="page"><a href="frameworks-js.html">JS Frameworks</a></li>
+      <li><a href="backend.html">Back-end</a></li>
+      <li><a href="index.html#herramientas">Herramientas</a></li>
+      <li><a href="index.html#recursos">Recursos</a></li>
+      <li><a href="index.html#contacto">Contacto</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main>
+  <section id="frameworks-js" class="seccion">
+    <h2>✨ Frameworks de JavaScript (React, Angular, Vue)</h2>
+    <p>
+      Los **Frameworks de JavaScript** se utilizan para construir **Single Page Applications (SPAs)**,
+      donde el contenido se actualiza dinámicamente sin recargar la página entera. Esto proporciona una experiencia
+      de usuario fluida, similar a una aplicación de escritorio.
+    </p>
+
+    ---
+
+    <h3>El Modelo de Componentes</h3>
+    <p>
+      El concepto central es la **componentización**. Un componente es un bloque de código reutilizable que combina HTML, CSS y lógica JavaScript.
+      Las aplicaciones complejas se construyen ensamblando estos componentes, lo que simplifica el desarrollo y el mantenimiento.
+    </p>
+
+    <pre><code>// Ejemplo de un componente funcional básico en React
+function BotonContador() {
+  const [contador, setContador] = useState(0);
+  return (
+    &lt;button onClick={() =&gt; setContador(contador + 1)}&gt;
+      Hiciste clic {contador} veces
+    &lt;/button&gt;
+  );
+}
+    </code></pre>
+
+    ---
+
+    <h3>Los Gigantes de JavaScript</h3>
+    <table class="frameworks-js-table">
+      <thead>
+      <tr>
+        <th>Framework</th>
+        <th>Mantenido por</th>
+        <th>Enfoque Principal</th>
+      </tr>
+      </thead>
+      <tbody>
+      <tr>
+        <td>**React**</td>
+        <td>Meta (Facebook)</td>
+        <td>Librería enfocada en la Interfaz de Usuario (UI). Usa JSX.</td>
+      </tr>
+      <tr>
+        <td>**Angular**</td>
+        <td>Google</td>
+        <td>Framework completo (Full-featured) basado en TypeScript.</td>
+      </tr>
+      <tr>
+        <td>**Vue.js**</td>
+        <td>Comunidad</td>
+        <td>Framework Progresivo. Conocido por su curva de aprendizaje suave y documentación clara.</td>
+      </tr>
+      </tbody>
+    </table>
+  </section>
+</main>
+
+<footer>
+  <p>© 2025 – Sitio informativo sobre desarrollo web</p>
+</footer>
+
+<script src="js/app.js"></script>
+</body>
+</html>
